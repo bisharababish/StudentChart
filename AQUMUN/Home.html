@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>AQU Model United Nations </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body>
+       <div class="container">
+        <nav class="navbar">
+            <img src="imgs/logo.png" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#registeration">Registeration</a></li>
+            </ul>
+        </nav>
+        
+     <section id="home">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="imgs/1.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imgs/2.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imgs/3.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imgs/4.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imgs/5.jpeg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter ++;
+                if(counter > 5){
+                    counter =1;
+                }
+            },5000);
+        </script>
+         
+        <div class="MUN">
+        <h1>
+            Al-Quds University’s Model United Nations
+        </h1>
+        </div>
+    <button type="button" ><a href="#registeration">JOIN US NOW</a><span></span></button> 
+    </section>
+     <section id="about">
+        <div class="aboutmun">
+            <h1>
+        What is MUN?
+            </h1>
+            <h2>
+        Model United Nations is a United Nations stimulation where delegates will have the chance to debate issues, work, cooperate and meet new people in order to create contemporary solutions to some of the world's most pressing and challenging issues.
+            </h2>
+            <h3>
+        At the end, delegates will have the chance to submit, debate and vote on resolutions!
+            </h3>
+            <h4>
+        About AQUMUN:
+            </h4>
+            <h5>
+        This program will be organized by medical students from Al-Quds University for the first time.
+            </h5>
+            <h6>
+        From our theme we insist on the idea that even if we have reached the 21 century, our health, thoughts, vision are being smeared by ignorance as well as the rights, security and atmosphere,
+            </h6>
+            <h7>
+        we took the initiative towards launching this conference as a vaccination by allowing the delegates to have a wider horizons to stand out
+            </h7>
+            <h8>
+        debate and preforming resolutions to raise awareness and knowledge.
+            </h8>
+          
+        </div>
+
+        <img src="imgs/m.jpeg"  class="m">
+        
+        <img src="imgs/i.jpeg"  class="i">
+     
+        <div class="mt">
+            <h9>
+        We aim to enhance the mentality in leadership, negotiation, and diplomacy will be developed in a Model United Nations, to allow medical students share their perspectives and opinions in solving world issues.          
+             </h9>
+        <div class="it">
+            <h10>
+                Most importantly we aim improve the relations between medical students, allow them to introduce themselves with their fruitful thoughts, improve their understanding to the world as well as their public speaking skills, communication skills and how to think.
+            </h10>
+        <div class="in">
+            <h11>
+                Ihab Hmeid
+            </h11>
+        </div>
+        <div class="mn">
+            <h12>
+                Mohammed Kamel
+            </h12>
+        </div>
+        </div>
+        
+    </div>
+     </section>
+     <section id="resources"></section>
+     <section id="registeration">
+        <h1>STAY TUNED.</h1>
+     </section>
+     
+</body>
+</html>

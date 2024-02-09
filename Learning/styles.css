@@ -1,0 +1,33 @@
+/* Internal CSS -> Style inside head
+    Inline CSS -> inside the code
+    External CSS -> new file
+*/
+*{
+color: red;
+text-align: center;
+}
+
+p{
+    color: red;
+}
+#h{
+    color: blue;
+    text-align: right;
+}
+.test{
+    color: green;
+}
+.test2{
+    text-align: left;
+    color: red;
+} /* wherever the code is above or below its weaker,below weaker and above is stronger*/
+#p1{
+    color: brown;
+}
+
+/*
+Universal Selecter (*)
+Tag Selector
+Class Selector (.)
+ID Selector
+-> which is stronger than other*/

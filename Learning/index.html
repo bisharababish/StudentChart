@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Learning CSS</title>
+    <style>
+        /* Internal CSS -> Style inside head
+            Inline CSS -> inside the code
+            External CSS -> new file
+        */
+        *{
+        color: red;
+        text-align: center;
+        }
+        
+        p{
+            color: red;
+        }
+        #h{
+            color: blue;
+            text-align: right;
+        }
+        .test{
+            color: green;
+        }
+        .test2{
+            text-align: left;
+            color: red;
+        } /* wherever the code is above or below its weaker,below weaker and above is stronger*/
+        #p1{
+            color: brown;
+        }
+        
+        /*
+        Universal Selecter (*)
+        Tag Selector
+        Class Selector (.)
+        ID Selector
+        -> which is stronger than other*/
+    </style>
+<!-- cntrl k c and k u to comment and uncomment -->
+</head>
+<body>
+    <h1 id="h">Hello</h1>  <!--to call one element with an ID-->
+    <h1 class="test test2">Test 2 Classes</h1>
+    <h1 class="test">Test2</h1> <!--to call all elements together-->
+    <p style="color: aqua; text-align: right;" id="p1">Hello world</p>
+    <p>Youtube.com</p>
+    <h1 class="test">This is a green paragraph</h1>
+</body>
+</html>

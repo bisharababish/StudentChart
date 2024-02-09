@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychologist's Office</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Psychologist's Office</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#services">Services</a> |
+        <a href="#testimonials">Testimonials</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home">
+        <h2>Welcome to Our Practice</h2>
+        <p>Your path to mental well-being starts here. Schedule an appointment today.</p>
+        <!-- Add image and call-to-action button -->
+    </section>
+
+    <!-- About Page -->
+    <section id="about">
+        <h2>About Dr. Clauda</h2>
+        <p>[Brief biography and approach]</p>
+    </section>
+
+    <!-- Services Page -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Cognitive-Behavioral Therapy</li>
+            <li>Individual Counseling</li>
+            <li>Group Therapy</li>
+            <!-- Add more services as needed -->
+        </ul>
+    </section>
+
+    <!-- Testimonials Page -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <!-- Add client testimonials and reviews -->
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for more information or to schedule an appointment.</p>
+
+        <!-- Appointment Form -->
+        <form action="process_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Brief Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Schedule Appointment</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Psychologist's Office | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

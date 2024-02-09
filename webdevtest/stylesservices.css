@@ -1,0 +1,21 @@
+
+.services-offered {
+    margin-bottom: 20px;
+
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input {
+    margin-bottom: 10px;
+}

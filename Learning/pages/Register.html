@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title> Register Account</title>
+    </head>
+    <body>
+        <h1> Register</h1>
+        <form>
+            <label for="fname"> Full name:</label>
+            <input type="text>" placeholder="Full Name" id="fname" required="true" maxlength="5"> <!-- textfield and placeholder is a tooltip-->
+            <label for="fpass">Password:</label>
+            <input type="password" placeholder="password" id="fpass" required="true">
+            <label for="femail">Email:</label>
+            <input type="email" placeholder="Email" id="femail" required="true">
+            <label for="fnumber">Numbers:</label>
+            <input type="number" min="12" max="100" step="0.1"Number" id="fnumber" required="true"> <!-- min amnd max for the numbers to put and step is how many clicks and shit-->
+            <br>        
+            <input type="checkbox" id="terms" checked="true">
+            <label for="terms">I accept the terms of service.</label>
+            <br><br>
+            <input type="radio" id="male" name="gender"> 
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label> 
+            <br><br>
+            <input type="color"><br><br>
+            <input type="file"><br><br>
+            <input type="range" min="0" max="100">
+            <br><br>
+            <input type="date" min="2010-04-28" max="2011-12-12">
+            <input type="text" placeholder="Test" readonly value="hello">
+            <input type="text" placeholder="Test" hidden value="hello">
+            <input type="text" placeholder="Test" disabled value="hello">
+            <br><br>
+            <input type="button" value="Click me">
+            <br><br>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Register"> <!--button/ we use required because its like important note that we have to fill in to sumbit-->
+            <br><br>
+            <select>
+                <option>Bethlehem</option>
+                <option>BeitSahour</option>
+                <option selected>BeitJala</option>
+            </select>
+            <br><br>
+            <button type="button">Click me1</button>
+            <button type="sumbit">Click me2</button>
+            <button>Click me3</button>
+            <textarea placeholder="Comments" cols="8" rows="6"></textarea>
+        <br><br>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+
+package Student;
+
+public class StudentChart  {
+    
+ Student [] StudentChart = new Student[100];
+ Student [] StudentChart2 = new Student[100];
+  Student [] StudentChart3 = new Student[100];
+int size = 0;
+    public StudentChart(Student [] StudentChart ){
+        this.StudentChart = StudentChart;
+        
+    }
+ public StudentChart(StudentChart sc){
+     this.StudentChart =  sc.StudentChart;
+          
+ }
+
+ 
+ public boolean addStudent(Student student){
+if( size < StudentChart.length)
+    StudentChart[size] = student;
+   size++;
+
+return false;
+ }
+ 
+ public void deleteStudent(Student student){
+     for(int i=0;i<StudentChart.length;i++){
+          if(StudentChart[i].equals(student)){
+              StudentChart2[i]=StudentChart[i];
+          }
+          
+     }
+     System.out.print(StudentChart2);
+
+ }
+  public int getNumOfStudents() {
+      return size;
+  }
+  public boolean isStudent(Student student) {
+        for(int i=0;i<size;i++){
+          if(StudentChart[i].getId() == student.getId())
+                          return true;
+        }
+        
+            return false;
+
+ 
+}
+   Student getStudent(int studentNum) {
+    Student t =  null;
+    for (int i = 0; i < size; i ++){
+        if(StudentChart[i].getId() == studentNum){
+            t = StudentChart[i];
+            break;
+        }
+    }
+    return t;
+  }
+   public  double getAverage(int course){
+       double sum = 0 ;
+       for (int i = 0 ; i < size ; i ++){
+           sum += StudentChart[i].getGrade(course);  
+       }
+       return sum/size;
+   }
+   public double getAverage() {
+            double sum = 0 ;
+       for (int i = 0 ; i < size ; i ++){
+           sum+=StudentChart[i].getAverage();  
+       }
+       return sum /size;
+   }
+   public void  sortById() {
+
+    for(int i=0;i<StudentChart.length;i++){
+        for(int j=0;j<StudentChart.length;j++){
+            if(StudentChart[j].getId()>StudentChart[i].getId()){
+                
+             Student temp= StudentChart[i];
+             StudentChart[i]=StudentChart[j];
+             StudentChart[j]=temp;
+             
+          
+            }
+        }
+    }
+    System.out.print(StudentChart);
+   
+   }
+   public void  sortByAverage() {
+
+    for(int i=0;i<StudentChart.length-1;i++){
+        for(int j=0;j<StudentChart.length;j++){
+            if(StudentChart[j].getAverage()>StudentChart[i].getAverage()){
+                
+             Student temp= StudentChart[i];
+             StudentChart[i]=StudentChart[j];
+             StudentChart[j]=temp;
+             
+          
+            }
+        }
+    }
+    System.out.print(StudentChart);
+   
+   }
+   
+  
+}
+
